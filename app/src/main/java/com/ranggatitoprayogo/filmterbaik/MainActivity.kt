@@ -27,6 +27,11 @@ class MainActivity : AppCompatActivity() {
         listFilm.add(Film("The Hobbit : An Unexpected Journey",R.drawable.unexpected_journey, "Adventure, Fantasy", "14 December 2012", "Peter Jackson", "7.8/10"))
         listFilm.add(Film("The Hobbit : The Desolation of Smaug",R.drawable.desolation_of_smaug, "Adventure, Fantasy", "13 December 2013", "Peter Jackson", "7.8/10"))
         listFilm.add(Film("The Hobbit : The Battle of Five Armies",R.drawable.battle_of_five_armies, "Adventure, Fantasy", "17 December 2014", "Peter Jackson", "7.4/10"))
+        listFilm.add(Film("Raya and the Last Dragon",R.drawable.raya_and_tl_dragon, "Adventure, Fantasy", "3 March 2021", "Don Hall, Paul Briggs, Carlos Lopez Estrada", "7.3/10"))
+        listFilm.add(Film("Transformers : Revenge of the Fallen",R.drawable.revenge_of_the_fallen, "Action, Adventure, Fantasy", "24 June 2009", "Michael Bay", "5.9/10"))
+        listFilm.add(Film("Transformers : Dark of the Moon",R.drawable.dark_of_the_moon, "Action, Adventure, Fantasy", "5 August 2011", "Michael Bay", "6.2/10"))
+        listFilm.add(Film("Transformers : Age Of Extinction",R.drawable.age_of_extinction, "Action, Adventure, Fantasy", "5 June 2014", "Michael Bay", "5.6/10"))
+        listFilm.add(Film("Transformers : The Last Knight",R.drawable.revenge_of_the_fallen, "Action, Adventure, Fantasy", "21 June 2017", "Michael Bay", "5.2/10"))
 
         binding.list.adapter = AdapterFilm(this, listFilm, object : AdapterFilm.OnClickListener{
             override fun detailData(item: Film?) {
