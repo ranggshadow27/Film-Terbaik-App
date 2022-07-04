@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val listFilm = ArrayList<Film>()
-        listFilm.add(Film("Albedo",R.drawable.fellowship_of_therings, "Mondstandt", "1.6m", "Unknown?", "20 May"))
-        listFilm.add(Film("Xiao",R.drawable.the_two_towers, "Liyue Adepti", "1.6m", "Unknown?", "20 May"))
-        listFilm.add(Film("Kaedahara Kazuha",R.drawable.unexpected_journey, "Inazuma", "1.7m", "Inazuma", "20 May"))
-        listFilm.add(Film("Kujou Sara",R.drawable.desolation_of_smaug, "Inazuma", "1.8m", "Inazuma", "20 May"))
-        listFilm.add(Film("Sangonomiya Kokomi",R.drawable.battle_of_five_armies, "Inazuma", "1.6m", "Watatsumi Island", "20 May"))
-        listFilm.add(Film("Yelan",R.drawable.raya_and_tl_dragon, "Liyue", "1.9m", "Liyue", "20 May"))
+        listFilm.add(Film("The Lord Of The Rings : The Fellowship Of The Ring",R.drawable.fellowship_of_therings, "Action, Adventure, Drama", "6 February 2002", "Peter Jackson", "8.8/10"))
+        listFilm.add(Film("The Lord Of The Rings : The Two Towers",R.drawable.the_two_towers, "Action, Adventure, Drama", "15 January 2003", "Peter Jackson", "8.8/10"))
+        listFilm.add(Film("The Lord Of The Rings : The Fellowship Of The Ring",R.drawable.the_two_towers, "Action, Adventure, Drama", "14 Januray 2004", "Peter Jackson", "9.0/10"))
+        listFilm.add(Film("The Hobbit : An Unexpected Journey",R.drawable.unexpected_journey, "Adventure, Fantasy", "14 December 2012", "Peter Jackson", "7.8/10"))
+        listFilm.add(Film("The Hobbit : The Desolation of Smaug",R.drawable.desolation_of_smaug, "Adventure, Fantasy", "13 December 2013", "Peter Jackson", "7.8/10"))
+        listFilm.add(Film("The Hobbit : The Battle of Five Armies",R.drawable.battle_of_five_armies, "Adventure, Fantasy", "17 December 2014", "Peter Jackson", "7.4/10"))
 
         binding.list.adapter = AdapterFilm(this, listFilm, object : AdapterFilm.OnClickListener{
             override fun detailData(item: Film?) {
